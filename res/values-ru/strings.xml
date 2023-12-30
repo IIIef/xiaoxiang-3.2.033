@@ -383,7 +383,7 @@
     <string name="txt_new_pwd">Новый пароль</string>
     <string name="txt_no_connect_ble">Не подключен</string>
     <string name="txt_no_more_ble">Вы не добавили ни одного устройства в список мониторинга.</string>
-    <string name="txt_number_cycles">Число циклов</string>
+    <string name="txt_number_cycles">Циклов</string>
     <string name="txt_pressure">VolDiff</string>
     <string name="txt_protect_state">Защита:</string>
     <string name="txt_recharge_switch">Заряд:</string>
