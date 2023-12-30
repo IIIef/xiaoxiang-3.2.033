@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/text_blue_1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:background="@color/text_blue_1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_68">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_white_radius_top_bg" android:paddingTop="@dimen/dp_100" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_45">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_my_info" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_complete_information" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_account_manager" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/ic_list_right_arrow" />
+                    </LinearLayout>
+                    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/lly_my_info" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/device_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_unbind_device" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/manager_device" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_unbind_device" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/ic_list_right_arrow" />
+                    </LinearLayout>
+                    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/lly_unbind_device" />
+                </RelativeLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_my_battery" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:id="@id/tv_my_battery" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_battery_use_know" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_battery_gray" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/ic_list_right_arrow" />
+                    </LinearLayout>
+                    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/lly_my_battery" />
+                </RelativeLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_my_bms" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:id="@id/tv_my_bms" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_bms_use_know" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_bms" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/ic_list_right_arrow" />
+                    </LinearLayout>
+                    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/lly_my_bms" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/debugInfoLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_my_line" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="查看所有指令" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_my_about_a" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/ic_list_right_arrow" />
+                    </LinearLayout>
+                    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/lly_my_line" />
+                </RelativeLayout>
+                <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_my_about" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_my_about" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_my_about_a" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/ic_list_right_arrow" />
+                    </LinearLayout>
+                    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/lly_my_about" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_setting" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/battery_setting" android:includeFontPadding="false" android:drawableLeft="@drawable/setting" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/ic_list_right_arrow" />
+                    </LinearLayout>
+                    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/lly_setting" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/lly_my_out_login" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_my_out_login" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_my_out_login" android:includeFontPadding="false" android:drawableLeft="@drawable/ic_out_login" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@drawable/ic_list_right_arrow" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_my_version" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/txt_version" android:includeFontPadding="false" android:drawableLeft="@drawable/version" android:drawablePadding="@dimen/dp_10" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/dp_13" android:textColor="@color/black" android:gravity="right" android:id="@id/tv_version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/lly_my_version" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center|left" android:id="@id/tv_ota" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="固件升级" android:drawableLeft="@drawable/setting" android:drawablePadding="@dimen/dp_10" />
+                <Switch android:id="@id/logSwitch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10" android:text="日志开关" style="@style/MySwitch2" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_my_login" android:layout_width="@dimen/dp_90" android:layout_height="@dimen/dp_90" />
+                <TextView android:textSize="@dimen/dp_16" android:textColor="@color/text_blue_1" android:id="@id/tv_my_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:includeFontPadding="false" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

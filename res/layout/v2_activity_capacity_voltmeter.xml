@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/v2_layout_top_title" />
+    <include layout="@layout/v2_layout_paramse" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="10%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_OneVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_OneVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_OneVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="20%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_TwoVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_TwoVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_TwoVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="30%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_ThreeVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_ThreeVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_ThreeVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="40%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_FourVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_FourVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_FourVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="50%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_FiveVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_FiveVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_FiveVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="60%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_SixVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_SixVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_SixVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="70%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_SevenVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_SevenVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_SevenVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="80%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_EightVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_EightVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_EightVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="90%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_NineVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_NineVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_NineVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="100%" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_HundredVoltmeter" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_HundredVoltmeter" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_HundredVoltmeter" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/cell_full_voltage" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/cellFullVoltageTv" android:layout_width="wrap_content" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/cellFullVoltageEt" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/cellFullVoltageSetTv" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/cell_release_voltage" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/cellReleaseVoltageTv" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/cellReleaseVoltageEt" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/cellReleaseVoltageSetTv" android:onClick="onClickVoltmeter" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relat_item" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/item_parameter_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/dp_20" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:id="@id/item_parameter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:includeFontPadding="false" android:layout_toRightOf="@id/item_parameter_icon" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_20" android:src="@drawable/ic_parameter_right" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

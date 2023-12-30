@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_temperature_left" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_now_thermometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_40" android:layout_marginRight="@dimen/dp_40" android:src="@drawable/ic_thermometer" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_temperature_right" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" />
+</LinearLayout>

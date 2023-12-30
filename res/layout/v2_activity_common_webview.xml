@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lly_Video_Port_Parent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/v2_layout_top_title" />
+        <ProgressBar android:id="@id/wv_pb_load" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:indeterminate="false" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/wv_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <Button android:textColor="@color/text_blue_1" android:id="@id/btn_wv_refresh_again" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80.0dip" android:text="@string/net_reload" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_Video_Land_Parent" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

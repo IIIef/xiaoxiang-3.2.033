@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/v2_layout_top_title" />
+    <include layout="@layout/v2_layout_paramse" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Charginghightemppro" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_ChargingHighTemp" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="℃" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_ChargingHighTemp" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_ChargingHighTemp" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Charginghightemprecovery" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_ChargingHighRecovery" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="℃" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_ChargingHighRecovery" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_ChargingHighRecovery" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Chargehightempdelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_ChargingHighDelayed" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_ChargingHighDelayed" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_ChargingHighDelayed" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Charginglowtempprotection" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_ChargingLowTemp" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="℃" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_ChargingLowTemp" android:inputType="numberSigned" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_ChargingLowTemp" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Charginglowtemprecovery" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_ChargingLowRecovery" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="℃" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_ChargingLowRecovery" android:inputType="numberSigned" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_ChargingLowRecovery" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Charginglowtempdelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_ChargingLowDelayed" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_ChargingLowDelayed" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_ChargingLowDelayed" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Dishightempprotection" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_DischargeHigh" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="℃" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_DischargeHighTemp" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_DischargeHighTemp" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Dishightempdelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_DischargeHighRecovery" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="℃" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_DischargeHighRecovery" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_DischargeHighRecovery" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Dishightemprecovery" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_DischargeHighDelayed" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_DischargeHighDelayed" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_DischargeHighDelayed" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Dislowtempprotection" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_DischargeLow" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="℃" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_DischargeLow" android:inputType="numberSigned" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_DischargeLow" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Dislowtemprecovery" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_DischargeLowRecovery" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="℃" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_DischargeLowRecovery" android:inputType="numberSigned" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_DischargeLowRecovery" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Dislowtempdelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_DischargeLowDelayed" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_DischargeLowDelayed" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_DischargeLowDelayed" android:onClick="onClickTemperature" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

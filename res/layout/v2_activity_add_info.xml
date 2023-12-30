@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/v2_layout_top_title" />
+    <androidx.core.widget.NestedScrollView android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_46" android:paddingRight="@dimen/dp_46" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/txt_info_phone" />
+                <com.jiabaida.little_elephant.view.XXEditText android:id="@id/edt_add_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:minHeight="@dimen/dp_44" app:editTextColor="@color/black" app:editTextHeight="wrap_content" app:editTextHint="@string/txt_info_phone" app:editTextHintColor="@color/text_gray" app:editTextSize="@dimen/dp_14" app:editTextWidth="fill_parent" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_17" android:text="@string/txt_info_email" />
+                <com.jiabaida.little_elephant.view.XXEditText android:id="@id/edt_add_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:minHeight="@dimen/dp_44" app:editTextColor="@color/black" app:editTextHeight="wrap_content" app:editTextHint="@string/txt_info_email" app:editTextHintColor="@color/text_gray" app:editTextSize="@dimen/dp_14" app:editTextWidth="fill_parent" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/dp_14" android:textColor="@color/public_color_white1" android:gravity="center" android:id="@id/btn_add_info" android:background="@drawable/selector_btn_blue_radius_180dp" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_46" android:layout_marginTop="@dimen/dp_36" android:layout_marginRight="@dimen/dp_46" android:button="@null" android:text="@string/txt_login_ok" style="?android:borderlessButtonStyle" />
+            <TextView android:textSize="@dimen/dp_12" android:textColor="@color/text_gray" android:gravity="center|left" android:padding="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_login_provide" android:includeFontPadding="false" android:layout_alignParentLeft="true" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

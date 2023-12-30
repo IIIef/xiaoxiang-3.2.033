@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/v2_layout_top_title" />
+    <include layout="@layout/v2_layout_paramse" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Chargeoverprotection" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_CharCurrentProtection" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mA" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_CharCurrentProtection" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_CharCurrentProtection" android:onClick="onClickElectric" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Chargeoverdelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_CharCurrentDelay" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_CharCurrentDelay" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_CharCurrentDelay" android:onClick="onClickElectric" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Chargingoverrecoverydealy" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_CharCurrentRecoveryDelay" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_CharCurrentRecoveryDelay" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_CharCurrentRecoveryDelay" android:onClick="onClickElectric" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Dischargeoverprotection" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_DischargeProtection" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mA" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_DischargeProtection" android:inputType="numberSigned" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_DischargeProtection" android:onClick="onClickElectric" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Dischargeoverdelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_DischargeDelay" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_DischargeDelay" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_DischargeDelay" android:onClick="onClickElectric" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Dischargeoverrecoverydelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_DischargeRecoveryDelay" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_DischargeRecoveryDelay" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_DischargeRecoveryDelay" android:onClick="onClickElectric" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/lly_two_electric" style="@style/Level2_params_lly">
+                <TextView android:id="@id/tv_two_electric" android:text="@string/txt_Secondaryprotectionvalue" style="@style/Level2_params_tv3" />
+                <Switch android:id="@id/tv_Secondaryprotectionvalue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="onClickElectric" style="@style/MySwitch2" />
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/lly_second_protection" android:onClick="onClickElectric" style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Secondaryprotection" style="@style/Level2_params_tv3" />
+                <TextView android:id="@id/tv_Secondaryprotection" android:text="0" style="@style/Level2_params_tv2" />
+                <TextView android:text="A" style="@style/Level2_params_tv2" />
+                <ImageView style="@style/Level2_params_img" />
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/lly_second_delay" android:onClick="onClickElectric" style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Secondaryoverdelay" style="@style/Level2_params_tv3" />
+                <TextView android:id="@id/tv_SecondaryDelay" android:text="0" style="@style/Level2_params_tv2" />
+                <TextView android:text="mS" style="@style/Level2_params_tv2" />
+                <ImageView style="@style/Level2_params_img" />
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/lly_short_protection" android:onClick="onClickElectric" style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Shortcircuitprotection" style="@style/Level2_params_tv3" />
+                <TextView android:id="@id/tv_Shortprotection" android:text="0" style="@style/Level2_params_tv2" />
+                <TextView android:text="A" style="@style/Level2_params_tv2" />
+                <ImageView style="@style/Level2_params_img" />
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/lly_short_delay" android:onClick="onClickElectric" style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Shortcircuitprotectiondelay" style="@style/Level2_params_tv3" />
+                <TextView android:id="@id/tv_ShortprotectionDelay" android:text="0" style="@style/Level2_params_tv2" />
+                <TextView android:text="uS" style="@style/Level2_params_tv2" />
+                <ImageView style="@style/Level2_params_img" />
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Shortprotectionrecoverydelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_ShortRecoveryDelay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_ShortRecoveryDelay" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_ShortRecoveryDelay" android:onClick="onClickElectric" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

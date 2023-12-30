@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/v2_layout_top_title" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/line_gray" android:showDividers="middle">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:id="@id/tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="@string/v2_Bluetooth_name" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_Bluetooth_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/dp_3" android:layout_marginBottom="@dimen/dp_5" android:layout_below="@id/tv_1" />
+                <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="@dimen/dp_44" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                    <EditText android:id="@id/ed_Bluetooth_name" android:layout_width="@dimen/dp_100" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_Bluetooth_name" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/rl_serial_number" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_Serialnumber" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_Serialnumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/rl_bar_code" android:padding="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_info_barcode" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_info_barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/device_model_layout" android:padding="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_Batterymodel" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_Batterymodel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/rl_manufacturer" android:padding="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_Batterymanufacturer" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_Batterymanufacturer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/bms_version_layout" android:padding="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_BMS_version" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_BMS_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/bms_model_layout" android:padding="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_BMS_model" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_BMS_model" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/rl_date" android:padding="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_manufacturingdate" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_manufacturingdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/bms_address_layout" android:padding="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_BMS_address" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_BMS_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/chg_current_layout" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_Ratedchargingcurrent" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_Ratedchargingcurrent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/dis_current_layout" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_Rateddischargecurrent" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_Rateddischargecurrent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:id="@id/disPowerLayout" android:padding="@dimen/dp_15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v2_Rateddischargepower" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+                <TextView android:textSize="@dimen/dp_14" android:textColor="@color/text_blue_1" android:id="@id/tv_Rateddischargepower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

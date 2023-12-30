@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lly_resistance_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/Level2_params_lly">
+        <TextView android:id="@id/tv_dz_params_name" style="@style/Level2_params_tv1" />
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/tv_dz_params" android:text="0.0" style="@style/Level2_params_tv2" />
+            <TextView android:id="@id/tv_dz_params_unit" android:text="mV" style="@style/Level2_params_tv2" />
+            <EditText android:id="@id/edt_dz_params" android:inputType="number" style="@style/Level2_params_edt" />
+            <TextView android:id="@id/btn_dz_params" android:onClick="onClickResistance" style="@style/Level2_params_btn" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

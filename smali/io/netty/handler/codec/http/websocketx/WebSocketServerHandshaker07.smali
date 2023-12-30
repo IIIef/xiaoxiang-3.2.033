@@ -1,0 +1,266 @@
+.class public Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;
+.super Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker;
+.source "WebSocketServerHandshaker07.java"
+
+
+# static fields
+.field public static final WEBSOCKET_07_ACCEPT_GUID:Ljava/lang/String; = "258EAFA5-E914-47DA-95CA-C5AB0DC85B11"
+
+
+# instance fields
+.field private final allowExtensions:Z
+
+.field private final allowMaskMismatch:Z
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZI)V
+    .locals 6
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    .line 59
+    invoke-direct/range {v0 .. v5}, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;-><init>(Ljava/lang/String;Ljava/lang/String;ZIZ)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ZIZ)V
+    .locals 1
+
+    .line 82
+    sget-object v0, Lio/netty/handler/codec/http/websocketx/WebSocketVersion;->V07:Lio/netty/handler/codec/http/websocketx/WebSocketVersion;
+
+    invoke-direct {p0, v0, p1, p2, p4}, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker;-><init>(Lio/netty/handler/codec/http/websocketx/WebSocketVersion;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 83
+    iput-boolean p3, p0, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->allowExtensions:Z
+
+    .line 84
+    iput-boolean p5, p0, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->allowMaskMismatch:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected newHandshakeResponse(Lio/netty/handler/codec/http/FullHttpRequest;Lio/netty/handler/codec/http/HttpHeaders;)Lio/netty/handler/codec/http/FullHttpResponse;
+    .locals 4
+
+    .line 123
+    new-instance v0, Lio/netty/handler/codec/http/DefaultFullHttpResponse;
+
+    sget-object v1, Lio/netty/handler/codec/http/HttpVersion;->HTTP_1_1:Lio/netty/handler/codec/http/HttpVersion;
+
+    sget-object v2, Lio/netty/handler/codec/http/HttpResponseStatus;->SWITCHING_PROTOCOLS:Lio/netty/handler/codec/http/HttpResponseStatus;
+
+    invoke-direct {v0, v1, v2}, Lio/netty/handler/codec/http/DefaultFullHttpResponse;-><init>(Lio/netty/handler/codec/http/HttpVersion;Lio/netty/handler/codec/http/HttpResponseStatus;)V
+
+    if-eqz p2, :cond_0
+
+    .line 127
+    invoke-interface {v0}, Lio/netty/handler/codec/http/FullHttpResponse;->headers()Lio/netty/handler/codec/http/HttpHeaders;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p2}, Lio/netty/handler/codec/http/HttpHeaders;->add(Lio/netty/handler/codec/http/HttpHeaders;)Lio/netty/handler/codec/http/HttpHeaders;
+
+    .line 130
+    :cond_0
+    invoke-interface {p1}, Lio/netty/handler/codec/http/FullHttpRequest;->headers()Lio/netty/handler/codec/http/HttpHeaders;
+
+    move-result-object p2
+
+    sget-object v1, Lio/netty/handler/codec/http/HttpHeaderNames;->SEC_WEBSOCKET_KEY:Lio/netty/util/AsciiString;
+
+    invoke-virtual {p2, v1}, Lio/netty/handler/codec/http/HttpHeaders;->get(Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_4
+
+    .line 134
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v2, "258EAFA5-E914-47DA-95CA-C5AB0DC85B11"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 135
+    sget-object v2, Lio/netty/util/CharsetUtil;->US_ASCII:Ljava/nio/charset/Charset;
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object v1
+
+    invoke-static {v1}, Lio/netty/handler/codec/http/websocketx/WebSocketUtil;->sha1([B)[B
+
+    move-result-object v1
+
+    .line 136
+    invoke-static {v1}, Lio/netty/handler/codec/http/websocketx/WebSocketUtil;->base64([B)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 138
+    sget-object v2, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->logger:Lio/netty/util/internal/logging/InternalLogger;
+
+    invoke-interface {v2}, Lio/netty/util/internal/logging/InternalLogger;->isDebugEnabled()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 139
+    sget-object v2, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->logger:Lio/netty/util/internal/logging/InternalLogger;
+
+    const-string v3, "WebSocket version 07 server handshake key: {}, response: {}."
+
+    invoke-interface {v2, v3, p2, v1}, Lio/netty/util/internal/logging/InternalLogger;->debug(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 142
+    :cond_1
+    invoke-interface {v0}, Lio/netty/handler/codec/http/FullHttpResponse;->headers()Lio/netty/handler/codec/http/HttpHeaders;
+
+    move-result-object p2
+
+    sget-object v2, Lio/netty/handler/codec/http/HttpHeaderNames;->UPGRADE:Lio/netty/util/AsciiString;
+
+    sget-object v3, Lio/netty/handler/codec/http/HttpHeaderValues;->WEBSOCKET:Lio/netty/util/AsciiString;
+
+    invoke-virtual {p2, v2, v3}, Lio/netty/handler/codec/http/HttpHeaders;->add(Ljava/lang/CharSequence;Ljava/lang/Object;)Lio/netty/handler/codec/http/HttpHeaders;
+
+    .line 143
+    invoke-interface {v0}, Lio/netty/handler/codec/http/FullHttpResponse;->headers()Lio/netty/handler/codec/http/HttpHeaders;
+
+    move-result-object p2
+
+    sget-object v2, Lio/netty/handler/codec/http/HttpHeaderNames;->CONNECTION:Lio/netty/util/AsciiString;
+
+    sget-object v3, Lio/netty/handler/codec/http/HttpHeaderValues;->UPGRADE:Lio/netty/util/AsciiString;
+
+    invoke-virtual {p2, v2, v3}, Lio/netty/handler/codec/http/HttpHeaders;->add(Ljava/lang/CharSequence;Ljava/lang/Object;)Lio/netty/handler/codec/http/HttpHeaders;
+
+    .line 144
+    invoke-interface {v0}, Lio/netty/handler/codec/http/FullHttpResponse;->headers()Lio/netty/handler/codec/http/HttpHeaders;
+
+    move-result-object p2
+
+    sget-object v2, Lio/netty/handler/codec/http/HttpHeaderNames;->SEC_WEBSOCKET_ACCEPT:Lio/netty/util/AsciiString;
+
+    invoke-virtual {p2, v2, v1}, Lio/netty/handler/codec/http/HttpHeaders;->add(Ljava/lang/CharSequence;Ljava/lang/Object;)Lio/netty/handler/codec/http/HttpHeaders;
+
+    .line 146
+    invoke-interface {p1}, Lio/netty/handler/codec/http/FullHttpRequest;->headers()Lio/netty/handler/codec/http/HttpHeaders;
+
+    move-result-object p1
+
+    sget-object p2, Lio/netty/handler/codec/http/HttpHeaderNames;->SEC_WEBSOCKET_PROTOCOL:Lio/netty/util/AsciiString;
+
+    invoke-virtual {p1, p2}, Lio/netty/handler/codec/http/HttpHeaders;->get(Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    .line 148
+    invoke-virtual {p0, p1}, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->selectSubprotocol(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    if-nez p2, :cond_2
+
+    .line 150
+    sget-object p2, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->logger:Lio/netty/util/internal/logging/InternalLogger;
+
+    invoke-interface {p2}, Lio/netty/util/internal/logging/InternalLogger;->isDebugEnabled()Z
+
+    move-result p2
+
+    if-eqz p2, :cond_3
+
+    .line 151
+    sget-object p2, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->logger:Lio/netty/util/internal/logging/InternalLogger;
+
+    const-string v1, "Requested subprotocol(s) not supported: {}"
+
+    invoke-interface {p2, v1, p1}, Lio/netty/util/internal/logging/InternalLogger;->debug(Ljava/lang/String;Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 154
+    :cond_2
+    invoke-interface {v0}, Lio/netty/handler/codec/http/FullHttpResponse;->headers()Lio/netty/handler/codec/http/HttpHeaders;
+
+    move-result-object p1
+
+    sget-object v1, Lio/netty/handler/codec/http/HttpHeaderNames;->SEC_WEBSOCKET_PROTOCOL:Lio/netty/util/AsciiString;
+
+    invoke-virtual {p1, v1, p2}, Lio/netty/handler/codec/http/HttpHeaders;->add(Ljava/lang/CharSequence;Ljava/lang/Object;)Lio/netty/handler/codec/http/HttpHeaders;
+
+    :cond_3
+    :goto_0
+    return-object v0
+
+    .line 132
+    :cond_4
+    new-instance p1, Lio/netty/handler/codec/http/websocketx/WebSocketHandshakeException;
+
+    const-string p2, "not a WebSocket request: missing key"
+
+    invoke-direct {p1, p2}, Lio/netty/handler/codec/http/websocketx/WebSocketHandshakeException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method protected newWebSocketEncoder()Lio/netty/handler/codec/http/websocketx/WebSocketFrameEncoder;
+    .locals 2
+
+    .line 167
+    new-instance v0, Lio/netty/handler/codec/http/websocketx/WebSocket07FrameEncoder;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lio/netty/handler/codec/http/websocketx/WebSocket07FrameEncoder;-><init>(Z)V
+
+    return-object v0
+.end method
+
+.method protected newWebsocketDecoder()Lio/netty/handler/codec/http/websocketx/WebSocketFrameDecoder;
+    .locals 5
+
+    .line 162
+    new-instance v0, Lio/netty/handler/codec/http/websocketx/WebSocket07FrameDecoder;
+
+    iget-boolean v1, p0, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->allowExtensions:Z
+
+    invoke-virtual {p0}, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->maxFramePayloadLength()I
+
+    move-result v2
+
+    iget-boolean v3, p0, Lio/netty/handler/codec/http/websocketx/WebSocketServerHandshaker07;->allowMaskMismatch:Z
+
+    const/4 v4, 0x1
+
+    invoke-direct {v0, v4, v1, v2, v3}, Lio/netty/handler/codec/http/websocketx/WebSocket07FrameDecoder;-><init>(ZZIZ)V
+
+    return-object v0
+.end method

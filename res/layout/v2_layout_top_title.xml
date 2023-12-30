@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lly_top_title_bg" android:background="@color/text_blue_1" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_top_back" android:background="@color/text_blue_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_top_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_18" android:minWidth="@dimen/dp_24" android:minHeight="@dimen/dp_24" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/dp_18" android:textColor="@color/public_color_white1" android:gravity="center" android:id="@id/tv_top_title" android:background="@color/text_blue_1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/public_color_white1" android:gravity="center|right" android:id="@id/tv_top_title_r" android:background="@color/text_blue_1" android:paddingRight="@dimen/dp_16" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

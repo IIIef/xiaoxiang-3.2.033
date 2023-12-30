@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorBg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Service: " />
+    <TextView android:textSize="15.0sp" android:textStyle="italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/tv_service" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/service_select_default" android:inputType="none" android:drawableEnd="@drawable/ic_arrow_down" android:drawableTint="@color/colorPrimary" />
+    <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Characteristic: " />
+    <TextView android:textSize="15.0sp" android:textStyle="italic" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/tv_characteristic" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/characteristic_select_default" android:inputType="none" android:drawableEnd="@drawable/ic_arrow_down" android:drawableTint="@color/colorPrimary" />
+    <TextView android:textSize="16.0sp" android:id="@id/tv_speed_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Progress" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_read_minus" android:background="?selectableItemBackground" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_minus" android:tint="@color/grey" />
+        <androidx.appcompat.widget.AppCompatSeekBar android:id="@id/sb_speed" android:padding="4.0dip" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="16" android:progress="8" android:layout_weight="1.0" style="@style/Widget.AppCompat.SeekBar.Discrete" />
+        <ProgressBar android:id="@id/pb_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" android:progressTint="@color/text_blue_1" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+        <ImageView android:id="@id/iv_read_plus" android:background="?selectableItemBackground" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_plus" android:tint="@color/grey" android:layout_centerInParent="true" />
+    </LinearLayout>
+</LinearLayout>

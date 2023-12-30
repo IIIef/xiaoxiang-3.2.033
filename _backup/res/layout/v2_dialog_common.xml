@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_white_radius_24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/ic_my_about_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_19" />
+    <TextView android:textSize="@dimen/dp_14" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/tv_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:text="@string/dialog_clear_warn" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dp_30" android:paddingBottom="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_blue_1" android:gravity="center" android:id="@id/tv_dialog_btn_left" android:background="@drawable/shape_stroke_blue_radius_180dp" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_10" android:minHeight="@dimen/dp_40" android:text="@string/dialog_cancel" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_dialog_btn_right" android:background="@drawable/shape_blue_radius_180dp" android:layout_width="@dimen/dp_120" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_20" android:minHeight="@dimen/dp_40" android:text="@string/dialog_define" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

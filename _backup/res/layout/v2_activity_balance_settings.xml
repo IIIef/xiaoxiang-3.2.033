@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myswitch="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/v2_layout_top_title" />
+    <include layout="@layout/v2_layout_paramse" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Equalizationvoltage" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_Equalizingvoltage" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_Equalizingvoltage" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_Equalizingvoltage" android:onClick="onClickBalance" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Balanceaccuracy" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_Equalizationaccuracy" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:layout_height="wrap_content" android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_Equalizationaccuracy" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_Equalizationaccuracy" android:onClick="onClickBalance" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Turnonequalization" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Switch android:id="@id/switch_open_balance" android:layout_width="wrap_content" android:layout_height="14.0dip" style="@style/MySwitch2" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/lly_balance_type" android:onClick="onClickBalance" style="@style/Level2_params_lly">
+                <TextView android:id="@id/tv_balance_type_title" android:text="@string/txt_Balancedmethod" style="@style/Level2_params_tv3" />
+                <TextView android:id="@id/tv_balance_type" android:layout_height="wrap_content" android:text="@string/txt_Staticequilibrium" style="@style/Level2_params_tv2" />
+                <ImageView style="@style/Level2_params_img" />
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

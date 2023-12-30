@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myswitch="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/v2_layout_top_title" />
+    <include layout="@layout/v2_layout_paramse" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_CellHighVoltProtect" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_MonomerOvervoltage" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_MonomerOvervoltage" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_MonomerOvervoltage" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_CellHighVoltRecover" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_MonomerOvervoltagerelease" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_MonomerOvervoltagerelease" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_MonomerOvervoltagerelease" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_CellHighVoltDelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_TotalDelayedrelease" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_TotalDelayedrelease" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_TotalDelayedrelease" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_CellLowVoltProtect" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_MonomerLowpressure" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_MonomerLowpressure" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_MonomerLowpressure" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_CellLowVoltRecover" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_MonomerLowpressurerelease" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_MonomerLowpressurerelease" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_MonomerLowpressurerelease" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_CellLowVoltDealy" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_TotalDelayedpressure" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_TotalDelayedpressure" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_TotalDelayedpressure" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_TotalVoltHighProtect" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_TotalOvervoltage" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_TotalOvervoltage" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_TotalOvervoltage" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_TotalVoltHighRecover" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_TotalOvervoltagerelease" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_TotalOvervoltagerelease" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_TotalOvervoltagerelease" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_TotalVoltHighDelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_TotalDelayedvoltagerelease" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_TotalDelayedvoltagerelease" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_TotalDelayedvoltagerelease" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_TotalVoltLowProtect" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_TotalLowpressure" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_TotalLowpressure" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_TotalLowpressure" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_TotalVoltLowRecover" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_TotalLowpressurerelease" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_TotalLowpressurerelease" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_TotalLowpressurerelease" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_TotalVoltLowDelay" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_TotalDelayedvoltage" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="s" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_TotalDelayedvoltage" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_TotalDelayedvoltage" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/ll_hardware_over" android:visibility="visible" style="@style/Level2_params_lly">
+                <TextView android:text="@string/ovp_value" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_hardware_over" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_hardware_over" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_hardware_over" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/ll_set_ovp_delay" android:visibility="gone" android:onClick="onClickElectric" style="@style/Level2_params_lly">
+                <TextView android:text="@string/ovp_delay" style="@style/Level2_params_tv3" />
+                <TextView android:id="@id/tv_ovp_delay" android:text="0" style="@style/Level2_params_tv2" />
+                <TextView android:text="s" style="@style/Level2_params_tv2" />
+                <ImageView style="@style/Level2_params_img" />
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/ll_hardware_under" android:visibility="visible" style="@style/Level2_params_lly">
+                <TextView android:text="@string/uvp_value" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_hardware_under" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mV" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_hardware_under" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_hardware_under" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/ll_set_uvp_delay" android:visibility="gone" android:onClick="onClickElectric" style="@style/Level2_params_lly">
+                <TextView android:text="@string/uvp_delay" style="@style/Level2_params_tv3" />
+                <TextView android:id="@id/tv_uvp_delay" android:text="0" style="@style/Level2_params_tv2" />
+                <TextView android:text="s" style="@style/Level2_params_tv2" />
+                <ImageView style="@style/Level2_params_img" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

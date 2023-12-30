@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myswitch="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/v2_layout_top_title" />
+    <include layout="@layout/v2_layout_paramse" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Nominal_capacity" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_NominalCapacity" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mAH" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_NominalCapacity" android:maxLength="9" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_NominalCapacity" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Cyclecapacity" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_LoopCapacity" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mAH" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_LoopCapacity" android:maxLength="9" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_LoopCapacity" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:id="@id/fullChargeLayout" android:visibility="visible" style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Fullcharge_capacity" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_FullCapacity" android:text="0" style="@style/Level2_params_tv2" />
+                    <TextView android:text="mAH" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_FullCapacity" android:maxLength="9" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_FullCapacity" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout style="@style/Level2_params_lly">
+                <TextView android:text="@string/txt_Cellnum" style="@style/Level2_params_tv1" />
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/tv_BatteryNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/Level2_params_tv2" />
+                    <EditText android:id="@id/ed_BatteryNum" android:inputType="number" style="@style/Level2_params_edt" />
+                    <TextView android:id="@id/tv_set_BatteryNum" android:onClick="onClickSystem" style="@style/Level2_params_btn" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/line_gray_2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

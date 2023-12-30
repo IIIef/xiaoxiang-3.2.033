@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_white_radius_24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dp_16" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/tv_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:text="电流校准" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:layout_weight="1.0">
+        <EditText android:textSize="@dimen/dp_14" android:textColor="@color/black" android:id="@id/edt_dialog_input" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_marginLeft="@dimen/dp_20" android:hint="请输入值" android:layout_weight="0.2" android:inputType="numberDecimal" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_20" android:text="A" android:layout_weight="0.8" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_blue_1" android:gravity="center" android:id="@id/tv_dialog_btn_left" android:background="@drawable/shape_stroke_blue_radius_180dp" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_10" android:text="@string/dialog_cancel" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_dialog_btn_right" android:background="@drawable/shape_blue_radius_180dp" android:layout_width="@dimen/dp_120" android:layout_height="@dimen/dp_40" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_20" android:text="@string/dialog_define" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>
