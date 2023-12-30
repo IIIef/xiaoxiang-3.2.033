@@ -12,7 +12,7 @@ packageInfo:
   forcedPackageId: 127
   renameManifestPackage: null
 versionInfo:
-  versionCode: 13333
+  versionCode: 133
   versionName: 3.2.033
 resourcesAreCompressed: false
 sharedLibrary: false
