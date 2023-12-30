@@ -1,3 +1,3 @@
-Перевод на русские прложения xiaoxiang
+Перевод xiaoxiang
 
 Оригиналяная версия http://www.jiabaida.com/appdown/index.html
