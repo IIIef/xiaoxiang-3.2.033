@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="DSG_protection">Короткое замыкание:</string>
     <string name="Dischargehightemprecoveryvalue">Значение восстановления при высокой температуре разряда должно быть ниже значения защиты, настройка не выполнена</string>
@@ -136,7 +136,7 @@
     <string name="network_disconnect">сеть отключена</string>
     <string name="no_authorize_change_first_psw">У вас нет разрешения на изменение пароля</string>
     <string name="no_operation_permission">Нет разрешения</string>
-    <string name="none">Ничего</string>
+    <string name="none">нет</string>
     <string name="not_mac_address">Отсутствует обязательный параметр [macAddr]</string>
     <string name="not_null_mac">MAC-адрес устройства не может быть пустым</string>
     <string name="not_token">Отсутствует требуемый токен параметра</string>
