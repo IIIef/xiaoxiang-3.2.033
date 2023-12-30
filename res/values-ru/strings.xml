@@ -192,7 +192,7 @@
     <string name="tab_DeviceList">Список устройств</string>
     <string name="tab_Run_log">Журнал запуска</string>
     <string name="tab_control">Контроль</string>
-    <string name="tab_curve_clear">очистить историю</string>
+    <string name="tab_curve_clear">очистить</string>
     <string name="tab_history">История</string>
     <string name="tab_my">Мой</string>
     <string name="tab_now">Мониторинг</string>
