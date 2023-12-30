@@ -91,7 +91,7 @@
     <string name="dialog_cancel">отмена</string>
     <string name="dialog_clear_warn">Действительно удалить предупреждение？</string>
     <string name="dialog_content">Чтобы обеспечить нормальное использование вами этого приложения, пожалуйста, перейдите к настройке авторизации</string>
-    <string name="dialog_define">определять</string>
+    <string name="dialog_define">подтвердить</string>
     <string name="dialog_go">перейти к</string>
     <string name="dialog_tip">подсказки</string>
     <string name="discharge_over_temperature">Подсчет разряда по температуре</string>
@@ -413,7 +413,7 @@
     <string name="txt_total_voltage">Общее</string>
     <string name="txt_unbind_ble">Отвязать</string>
     <string name="txt_unbind_device">Отвязать устройство</string>
-    <string name="txt_unbindble">Вы уверены, что хотите отвязаться?</string>
+    <string name="txt_unbindble">Хотите отключить?</string>
     <string name="txt_version">Версия</string>
     <string name="txt_voltage_average">Среднее V</string>
     <string name="txt_voltage_calibration">%dth напряжение строки</string>
