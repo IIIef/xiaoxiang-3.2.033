@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="DSG_protection">Короткое замыкание:</string>
     <string name="Dischargehightemprecoveryvalue">Значение восстановления при высокой температуре разряда должно быть ниже значения защиты, настройка не выполнена</string>
@@ -61,7 +61,7 @@
     <string name="barcode">штрих-код</string>
     <string name="barcode_tip">Пожалуйста, поместите QR-код в поле для сканирования</string>
     <string name="battery_lithium">Переключение на LFP</string>
-    <string name="battery_setting">Контроль фоновой активности</string>
+    <string name="battery_setting">Отключение оптимизации энергопотребления</string>
     <string name="battery_ternary">Переключение на NMC</string>
     <string name="bluetooth_psw">Пароль для подключения</string>
     <string name="cell_full_voltage">Полное напряжение</string>
