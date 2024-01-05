@@ -60,9 +60,9 @@
     <string name="authorize_tip3">Авторизовано, пожалуйста, не подавайте повторно</string>
     <string name="barcode">штрих-код</string>
     <string name="barcode_tip">Пожалуйста, поместите QR-код в поле для сканирования</string>
-    <string name="battery_lithium">Переключение на LFP</string>
+    <string name="battery_lithium">LFP</string>
     <string name="battery_setting">Отключение оптимизации энергопотребления</string>
-    <string name="battery_ternary">Переключение на NMC</string>
+    <string name="battery_ternary">NMC</string>
     <string name="bluetooth_psw">Пароль для подключения</string>
     <string name="cell_full_voltage">Полное напряжение</string>
     <string name="cell_over_vol">Ячейка OVP:</string>
@@ -196,7 +196,7 @@
     <string name="tab_history">История</string>
     <string name="tab_my">Мой</string>
     <string name="tab_now">Мониторинг</string>
-    <string name="tab_params">Параметр</string>
+    <string name="tab_params">Настройки</string>
     <string name="to_upgrade">Обновление</string>
     <string name="token_invisible">Срок действия токена истек</string>
     <string name="touch_to_focus">Коснитесь экрана, чтобы сфокусироваться</string>
@@ -297,7 +297,7 @@
     <string name="txt_TotalVoltLowDelay">Общая задержка низкого напряжения</string>
     <string name="txt_TotalVoltLowProtect">Общее напряжение, низкий уровень защиты</string>
     <string name="txt_TotalVoltLowRecover">Полное восстановление низкого напряжения</string>
-    <string name="txt_Turnonequalization">Включить выравнивание</string>
+    <string name="txt_Turnonequalization">Включить балансировку</string>
     <string name="txt_Undervoltageprotection_value">Значение защиты от пониженного напряжения должно быть ниже значения восстановления, настройка не выполнена</string>
     <string name="txt_Undervoltagerecoveryvalue">Значение восстановления при пониженном напряжении должно быть выше значения защиты, настройка не выполнена</string>
     <string name="txt_Voltagecalibration">Калибровка напряжения</string>
